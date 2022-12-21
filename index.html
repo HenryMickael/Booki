@@ -9,48 +9,44 @@
     <title>Booki</title>
 </head>
 <body>
+
 <!--Navigation-->
-    <nav>
-        <header>
-            <div class="logo">
-                <img src="Images/Booki.png" alt="logo Booki">
+     <header>      
+        <nav >
+            <div><img src="/Images/Booki.png" alt="logo booki"></div>
+            <div class="onglet">
+                <a id="hebergement" href="#">Hébergements</a>
+                <a id="activite" href="#">Activiés</a>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activiés</a></li>
-                </ul>
-            </div>
-        </header>
-    </nav>
-
-    <section>
-        <h1></h1>
-    </section>
+        </nav>
+    
 <!--Titre et Filtres-->
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            
+<!--Block recherche-->
+        <div class="recherche">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" id="cherche" placeholder="Marseille, France">
+            <button>rechercher</button>
+        </div>
 
-    <div class="recherche">
-        <i class="fa-solid fa-location-dot"></i>
-        <input type="search" id="cherche" placeholder="Marseille, France">
-        <button>rechercher</button>
-    </div>
+        <div class="filtres">
+            <ul>
+                <Li id="filtre">Filtres</Li>
+                <Li id="economique"><i class="fa-sharp fa-solid fa-money-bill-wave"></i>Économique</Li>
+                <Li id="familial"><i class="fa-sharp fa-solid fa-person"></i>Familial</Li>
+                <Li id="romantique"><i class="fa-solid fa-heart"></i>Romantique</Li>
+                <Li id="animaux"><i class="fa-solid fa-dog"></i>Animaux autorisés</Li>
+            </ul>
+        </div>
 
-    <div class="filtres">
-        <ul>
-            <Li id="filtre">Filtres</Li>
-            <Li id="economique"><i class="fa-sharp fa-solid fa-money-bill-wave"></i>Économique</Li>
-            <Li id="familial"><i class="fa-sharp fa-solid fa-person"></i>Familial</Li>
-            <Li id="romantique"><i class="fa-solid fa-heart"></i>Romantique</Li>
-            <Li id="animaux"><i class="fa-solid fa-dog"></i>Animaux autorisés</Li>
-        </ul>
-    </div>
+        <div class="info">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </header>
 
-    <div class="info">
-        <i class="fa-solid fa-circle-info"></i>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-</div>
 <!--Bloc et cartes-->
     <main>
         <section>
