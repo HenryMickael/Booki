@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*****GENERAL*****/
+*{
+    max-width: 1400px;
+    margin: 0.;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    margin-block:0;
+}
+body{
+    margin: 10px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 6px 0;
+}
+p{
+    font-size: 0.85em;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+/*****LOGO ET NAVIGATION*****/
+.entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.entete img{
+    width: 3.5em;
+    height: 1.1em;
+}
+nav{
+    width: 20em;
+    height: 4em;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li{
+    font-size: 0.8em;
+    padding: 1.8em;
+}
+
+nav li:hover{
+    border-top: solid 2px #0065fc ;
+}
+
+/*****RECHERCHE*****/
+.recherche{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 1.5em 0;
+}
+.recherche input{
+    width: 12em;
+    height: 2.6em;
+    border: none;
+    padding-left: 0.5em;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
+}
+.recherche .gps{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 3.14em;
+    width: 3.5em;
+    border-radius: 10px 0 0 10px;
+}
+.recherche .cherche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    height: 2.9em;
+    width: 8em;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+}
+.recherche .cherche:hover{
+    background-color: #0065fcc5;
+}
+.recherche .cherche:active{
+    background-color: #0065FC;
+}
+
+/*****FILTRES*****/
+
+.filtres{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    
+}
+.filtre i{
+    color: #0065FC;
+    width: 22px;
+    height: 18.33px;
+    padding: 5px;
+
+}
+/*****INFO*****/
+/****DESKTOP****/
+@media screen and (max-width: 1400px;min-width:769px){
+    .loupe {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+
+/******RESPONSIVE TABLETTE*****/
+
+/*couleur test*/
+@media screen and (max-width: 992px){
+    body{
+        background-color: rgb(72, 68, 136);
+
+    }
+}
+@media screen and (max-width: 992px){
+    nav li:hover{
+        border-top: none;
+        border-bottom: solid 2px #0065fc ;
+    }
+}
+
+
+/*****RESPONSIVE PORTABLE*****/
+
+/*couleur test*/
+@media screen and (max-width: 768px){
+    body{
+        background-color: rgb(134, 68, 136); /*Violet*/
+
+    }
+}
+@media screen and (max-width:768px ){
+
+    .entete{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .entete nav{
+       width: 100%;
+    }
+    .entete li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav li:hover{
+        border-top: none;
+        border-bottom: solid 2px #0065fc ;
+    }
+    .recherche{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+    .cherche{
+        display: none;
+        visibility: hidden;
+    }
+    .loupe{
+        position: relative;
+        transform: translateX(-11em);
+        background-color: #0065fc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 3.75em;
+        width: 4em;
+        border: none;
+        border-radius: 0 10px 10px 0;
+        color: white;
+    }
+    .gps{
+    padding: 0 5px;
+    }
+}
