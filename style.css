@@ -27,6 +27,10 @@ h2{
     font-size: 1em;
     font-weight: 700;
 }
+h3{
+    font-size: 0.9em;
+    font-weight: 700;
+}
 p{
     font-size: 0.85em;
     font-weight: 400;
@@ -164,18 +168,12 @@ main div h2{
 
 /*****HEBERGEMENT*****/
 
-.bighebergement{
+#bighebergement{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-/* #title1{
-    width: 100%;
-}
-#affiche{
-    width: 100%;
-} */
 .hebergement{
     width: 60%;
     height: 30em;
@@ -208,7 +206,7 @@ main div h2{
     object-fit: cover ;
     
 }
-.card .star{
+.star{
     color: #0065FC;
 }
 .grey{
@@ -222,6 +220,66 @@ main div h2{
     gap: 1em;
 }
 
+/*****POPULAIRE*****/
+.populaire{
+    width: 25%;
+    height: 30em;
+    background-color: #d9d9d95e;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+}
+.populaire h1{
+    margin-bottom: 20px;
+}
+
+.cardp{
+    width: 100%;
+    height: 7.2em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 3px white;
+    margin: 2px 5px;
+    
+}
+.threecard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.threecard .cardp img{
+    width: 40%;
+    height: 7em;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover ;
+}
+.text{
+    width: 55%;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around
+}
+.fivestar{
+    display: flex;
+    padding-top: 17%;
+}
+.titreicone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titreicone i{
+    color: #0065FC;
+}
 
 
 /****DESKTOP****/
