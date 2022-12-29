@@ -198,6 +198,9 @@ main div h2{
     align-items: center;
     border-radius: 10px;
     border: solid 3px white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    
 }
 .hebergement .card img{
     width: 100%;
@@ -235,7 +238,7 @@ main div h2{
 }
 
 .cardp{
-    width: 100%;
+    width: 98%;
     height: 7.2em;
     background-color: white;
     display: flex;
@@ -245,6 +248,7 @@ main div h2{
     border-radius: 10px;
     border: solid 3px white;
     margin: 2px 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     
 }
 .threecard{
@@ -261,7 +265,7 @@ main div h2{
     object-fit: cover ;
 }
 .text{
-    width: 55%;
+    width: 50%;
     height: 7em;
     display: flex;
     flex-direction: column;
@@ -280,7 +284,71 @@ main div h2{
 .titreicone i{
     color: #0065FC;
 }
+.card:hover{
+    background-color: #f2f2f2;
+}
+.cardp:hover{
+    background-color: #f2f2f2;
+}
 
+
+/******ACTIVITE*****/
+
+#activite{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.fourcard{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.pica{
+    width: auto;
+    height: 260pxpx;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.pica img{
+    width: 260px;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover ;
+}
+.pica h3{
+    padding: 10px 10px 10px 20px;
+}
+.pica:hover{
+    background-color: #f2f2f2;
+}
+
+/*****FOOTER*****/
+footer{
+    padding: 20px 0 20px 20px;
+    background-color: #f2f2f2;
+}
+.footer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 /****DESKTOP****/
 @media screen and (max-width: 1400px) and (min-width:769px){
