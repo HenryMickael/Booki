@@ -24,7 +24,7 @@ h1{
     margin: 6px 0;
 }
 h2{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 h3{
@@ -46,12 +46,8 @@ p{
 
 }
 .entete img{
-    width: 3.5em;
-    height: 1.1em;
-}
-nav{
-    width: 20em;
-    height: 4em;
+    width: 4em;
+    height: 1.3em;
 }
 nav ul{
     width: 100%;
@@ -61,8 +57,9 @@ nav ul{
     align-items: center;
 }
 nav li{
-    font-size: 0.8em;
-    padding: 1.8em;
+    font-size: 1em;
+    padding: 2.5em 2em 2em 2em;
+    border-top: solid 2px #0065fc00 ;
 }
 
 nav li:hover{
@@ -98,7 +95,7 @@ nav li a:hover{
     width: 3.5em;
     border-radius: 10px 0 0 10px;
 }
-.recherche .cherche{
+.btncherche{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,17 +110,16 @@ nav li a:hover{
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
 }
-.recherche .cherche:hover{
+.btncherche:hover{
     background-color: #0065fcc5;
 }
-.recherche .cherche:active{
+.btncherche:active{
     background-color: #0065FC;
 }
 
 /*****FILTRES*****/
-main div h2{
-    padding: 0.2em 0.5em 0.2em 0;
-    margin: 0.2em 0.5em 0.2em 0;
+.filtres h2{
+    padding: 0 40px 0 0
 }
 .filtres{
     display: flex;
@@ -132,21 +128,24 @@ main div h2{
 .filtre{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    align-items: center;
+    
     
 }
 .icon i{
     color: #0065FC;
-    width: 22px;
-    height: 18.33px;
-    padding: 5px;
+    margin-right: 0.5em;
+
 }
 .icon{
     border: solid 3px #f2f2f2;
     border-radius: 25px;
-    padding: 0.3em 1.5em;
-    margin: 0.5em 1.5em;
+    padding: 10px 12px;
     font-weight: 700;
-    font-size: 0.95em;
+    font-size: 1.2em;
+    margin-right: 2.5em;
 }
 .icon:hover{
     background-color: #deebff;
@@ -176,7 +175,6 @@ main div h2{
 }
 .hebergement{
     width: 60%;
-    height: 30em;
     background-color: #d9d9d95e;
     display: flex;
     flex-direction: column;
@@ -226,7 +224,6 @@ main div h2{
 /*****POPULAIRE*****/
 .populaire{
     width: 25%;
-    height: 30em;
     background-color: #d9d9d95e;
     display: flex;
     flex-direction: column;
@@ -297,14 +294,12 @@ main div h2{
 #activite{
     display: flex;
     flex-direction: column;
-    height: 420px;
+    max-width: 1400px;
     width: auto;
     padding-bottom: 50px;
     padding-top: 20px;
 }
 .fourcard{
-    height: auto;
-    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -312,8 +307,9 @@ main div h2{
 
 }
 .pica{
-    width: auto;
-    height: 395px;
+    display: flex;
+    width: 20%;
+    height: auto;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -321,8 +317,8 @@ main div h2{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .pica img{
-    width: 260px;
-    height: 350px;
+    width: 100%;
+    height: 400px;
     border-radius: 10px 10px 0 0;
     object-fit: cover ;
 }
@@ -351,12 +347,11 @@ footer{
 }
 
 /****DESKTOP****/
-@media screen and (max-width: 1400px) and (min-width:769px){
+@media screen and (max-width: 1400px){
     .loupe {
         display: none;
-        visibility: hidden;
     }
-}
+} 
 
 
 
@@ -371,10 +366,23 @@ footer{
 }
 @media screen and (max-width: 992px){
     nav li:hover{
-        border-top: none;
+        border-top: unset;
         border-bottom: solid 2px #0065fc ;
     }
+    #bighebergement{
+        flex-direction: column;
+    }
+    .hebergement{
+        width: 100%;
+    }
+    .populaire{
+        width: 100%;
+    }
+    .threecard{
+        flex-direction: row;
+    }
 }
+    
 
 
 /*****RESPONSIVE PORTABLE*****/
@@ -386,8 +394,12 @@ footer{
 
     }
 }
-@media screen and (max-width:768px ){
-
+@media screen and (max-width:768px ) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+/*******MQ NAV*****/
     .entete{
         display: flex;
         flex-direction: column;
@@ -401,22 +413,28 @@ footer{
         display: flex;
         justify-content: center;
     }
-    nav li:hover{
-        border-top: none;
-        border-bottom: solid 2px #0065fc ;
+    nav li{
+        border-bottom: solid 2px #f2f2f228;
     }
+    nav li:hover{
+        border-top: unset;
+        border-bottom: solid 2px #0065fc;
+    }
+    header h1, h2, p{
+        margin-left: 10px;
+    }
+    /******MQ BARRE DE RECHERCHE*****/
     .recherche{
         justify-content: center;
         transform: translateX(5%)
         
     }
-    .cherche{
+    .btncherche{
         display: none;
         visibility: hidden;
+        
     }
     .loupe{
-        position: relative;
-        transform: translateX(-11em);
         background-color: #0065fc;
         display: flex;
         align-items: center;
@@ -430,5 +448,50 @@ footer{
     }
     .gps{
     padding: 0 5px;
+    }
+    /******MQ FILTRES*****/
+    .filtres{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* .filtre{ */
+        /* width: 200px; */
+        /* font-size: 0.6em */
+/* } */
+
+    /******MQ HEBERGEMENT ET POPULAIRE******/
+    #bighebergement{
+        flex-direction: column-reverse;
+    }
+    .sixcard{
+        display: flex;
+        justify-content: center;
+    }
+    .hebergement{
+        flex-direction: column;
+        justify-content: center;
+        background-color: unset;
+        padding: 0;
+    }
+    .threecard{
+        flex-direction: column;
+        max-width: 500px;
+        height: auto;
+    }
+    .hebergement h2{
+        display: none;
+    }
+
+    /******MQ ACTIVITE*****/
+    .fourcard{
+        flex-direction: column
+    }
+    .pica{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
