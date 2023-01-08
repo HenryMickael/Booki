@@ -28,13 +28,13 @@ h2{
     font-weight: 700;
 }
 h3{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 700;
 }
 p{
     font-size: 0.85em;
     font-weight: 400;
-    margin: 6px 0;
+    /* margin: 6px 0; */
 }
 
 /*****LOGO ET NAVIGATION*****/
@@ -129,7 +129,7 @@ nav li a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 75%;
+    /* width: 75%; */
     align-items: center;
     
     
@@ -144,7 +144,7 @@ nav li a:hover{
     border-radius: 25px;
     padding: 10px 12px;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.05em;
     margin-right: 2.5em;
 }
 .icon:hover{
@@ -183,10 +183,12 @@ nav li a:hover{
     padding: 30px;
 }
 .hebergement h1{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-left: 10px;
 }
 .hebergement h2{
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 .card{
     width: 225px;
@@ -209,18 +211,22 @@ nav li a:hover{
 }
 .star{
     color: #0065FC;
+    font-size: smaller;
 }
 .grey{
     color: #f2f2f2;
+    font-size: smaller;
 }
 .sixcard{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1em;
+    gap: 2.5em;
 }
-
+.card h3, .card p, .star{
+    padding-left: 8px;
+}
 /*****POPULAIRE*****/
 .populaire{
     width: 25%;
@@ -229,14 +235,16 @@ nav li a:hover{
     flex-direction: column;
     border-radius: 10px;
     padding: 30px;
+    margin: 0 10px 0 0;
 }
 .populaire h1{
     margin-bottom: 20px;
 }
-
+.bcardp{
+    display: flex;
+}
 .cardp{
-    width: 98%;
-    height: 7.2em;
+    flex: 95%;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -257,13 +265,13 @@ nav li a:hover{
 }
 .threecard .cardp img{
     width: 40%;
-    height: 7em;
+    height: 9em;
     border-radius: 10px 0 0 10px;
     object-fit: cover ;
 }
 .text{
     width: 50%;
-    height: 7em;
+    height: 9em;
     display: flex;
     flex-direction: column;
     justify-content:space-around
@@ -294,10 +302,8 @@ nav li a:hover{
 #activite{
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
-    width: auto;
     padding-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 .fourcard{
     display: flex;
@@ -307,9 +313,7 @@ nav li a:hover{
 
 }
 .pica{
-    display: flex;
-    width: 20%;
-    height: auto;
+    width: 22%;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -318,7 +322,7 @@ nav li a:hover{
 }
 .pica img{
     width: 100%;
-    height: 400px;
+    height: 350px;
     border-radius: 10px 10px 0 0;
     object-fit: cover ;
 }
@@ -345,7 +349,12 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
+.parafooter{
+    margin-top: 10px;
+}
+.parafooter p{
+    margin-bottom: 7px;
+}
 /****DESKTOP****/
 @media screen and (max-width: 1400px){
     .loupe {
@@ -357,30 +366,35 @@ footer{
 
 /******RESPONSIVE TABLETTE*****/
 
-/*couleur test*/
-@media screen and (max-width: 992px){
-    body{
-        background-color: rgb(72, 68, 136);
-
-    }
-}
 @media screen and (max-width: 992px){
     nav li:hover{
         border-top: unset;
         border-bottom: solid 2px #0065fc ;
     }
+    body{
+        margin: 20px;
+    }
+    .icon{
+        font-size: 1em;
+    }
     #bighebergement{
         flex-direction: column;
     }
     .hebergement{
-        width: 100%;
+        width: 94%;
+        margin-bottom: 30px;
     }
     .populaire{
-        width: 100%;
+        width: 94%;
     }
     .threecard{
         flex-direction: row;
     }
+    .cardp{
+        width: 250px;
+    }
+    
+    
 }
     
 
