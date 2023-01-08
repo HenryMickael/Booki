@@ -34,7 +34,7 @@ h3{
 p{
     font-size: 0.85em;
     font-weight: 400;
-    margin: 6px 0;
+    /* margin: 6px 0; */
 }
 
 /*****LOGO ET NAVIGATION*****/
@@ -224,7 +224,7 @@ nav li a:hover{
     justify-content: space-around;
     gap: 2.5em;
 }
-.card h3, p, .star{
+.card h3, .card p, .star{
     padding-left: 8px;
 }
 /*****POPULAIRE*****/
@@ -240,7 +240,9 @@ nav li a:hover{
 .populaire h1{
     margin-bottom: 20px;
 }
-
+.bcardp{
+    display: flex;
+}
 .cardp{
     flex: 95%;
     background-color: white;
@@ -263,13 +265,13 @@ nav li a:hover{
 }
 .threecard .cardp img{
     width: 40%;
-    height: 7em;
+    height: 9em;
     border-radius: 10px 0 0 10px;
     object-fit: cover ;
 }
 .text{
     width: 50%;
-    height: 7em;
+    height: 9em;
     display: flex;
     flex-direction: column;
     justify-content:space-around
@@ -364,13 +366,6 @@ footer{
 
 /******RESPONSIVE TABLETTE*****/
 
-/*couleur test*/
-/* @media screen and (max-width: 992px){
-    body{
-        background-color: rgb(72, 68, 136);
-
-    }
-} */
 @media screen and (max-width: 992px){
     nav li:hover{
         border-top: unset;
