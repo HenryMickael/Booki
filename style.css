@@ -7,6 +7,7 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     margin-block: 0;
+    /* box-sizing: border-box; */
 }
 body{
     margin: 0 55px;
@@ -224,7 +225,7 @@ nav li a:hover{
     justify-content: space-around;
     gap: 2.5em;
 }
-.card h3, .card p, .star{
+.card h3, .card p, .hebergement .star{
     padding-left: 8px;
 }
 /*****POPULAIRE*****/
@@ -240,7 +241,7 @@ nav li a:hover{
 .populaire h1{
     margin-bottom: 20px;
 }
-.bcardp{
+.divcardp{
     display: flex;
 }
 .cardp{
@@ -393,7 +394,12 @@ footer{
     .cardp{
         width: 250px;
     }
-    
+    .pica img{
+        height: 250px;
+    }
+    .pica h3{
+        font-size: 0.8em;
+    }
     
 }
     
@@ -401,23 +407,18 @@ footer{
 
 /*****RESPONSIVE PORTABLE*****/
 
-/*couleur test*/
-@media screen and (max-width: 768px){
-    body{
-        background-color: rgb(134, 68, 136); /*Violet*/
-
-    }
-}
 @media screen and (max-width:768px ) {
     body{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 /*******MQ NAV*****/
     .entete{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
     }
     .entete nav{
        width: 100%;
@@ -440,7 +441,7 @@ footer{
     /******MQ BARRE DE RECHERCHE*****/
     .recherche{
         justify-content: center;
-        transform: translateX(5%)
+        /* transform: translateX(5%) */
         
     }
     .btncherche{
@@ -468,13 +469,27 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
+    .filtres h2{
+        margin: 10px;
+    }
 
-    /* .filtre{ */
-        /* width: 200px; */
-        /* font-size: 0.6em */
-/* } */
+    .filtre{
+        font-size: 0.6em;
+        gap: 10px;
+        padding: 10px;
+}
+    .icon{
+        display: flex;
+        margin: 0;
+        width: 30%;
+        height: 15px;
+        justify-content: flex-start;
+        padding-top: 15px;
+    }
+
 
     /******MQ HEBERGEMENT ET POPULAIRE******/
+    /*****MQ HEBERGEMENT****/
     #bighebergement{
         flex-direction: column-reverse;
     }
@@ -482,30 +497,73 @@ footer{
         display: flex;
         justify-content: center;
     }
+    .sixcard li{
+        display: flex;
+        flex: 100%;
+    }
     .hebergement{
         flex-direction: column;
         justify-content: center;
         background-color: unset;
         padding: 0;
+        width: 100%;
     }
     .threecard{
         flex-direction: column;
-        max-width: 500px;
         height: auto;
+    }
+    .card{
+        flex: 1;
     }
     .hebergement h2{
         display: none;
     }
+    /*****MQ POPULAIRE*****/
+    .populaire{
+        padding: 0;
+        width: 100%;
+    }
+    .threecard{
+        align-items: center;
+    }
+    /* .divcardp{
+        display: flex;
+        width: 95%;
+    } */
+     .threecard div{
+        display: flex;
+        width: 95%; 
+    }
+
+
 
     /******MQ ACTIVITE*****/
     .fourcard{
-        flex-direction: column
+        flex-direction: column;
+        justify-content: center;
     }
+
     .pica{
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         width: 100%;
-        height: auto;
+    }
+    .pica a{
+        width: 100%;
+    }
+    .pica img{
+        display: flex;
+        height: 130px;
+        width: 180%;
+        justify-content: flex-start;
         object-fit: cover;
+    }
+    /*****FOOTER*****/
+    .footer{
+        flex-direction: column;
+    }
+    .element{
+        margin-top: 20px;
     }
 }
