@@ -462,7 +462,15 @@ footer{
         border: none;
         border-radius: 0 10px 10px 0;
         color: white;
+        cursor: pointer;
     }
+    .loupe:hover{
+        background-color: #0065fcc5;
+    }
+    .loupe:active{
+        background-color: #0065FC;
+    }
+
     .gps{
     padding: 0 5px;
     }
